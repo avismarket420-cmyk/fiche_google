@@ -327,7 +327,7 @@
                 <a href="#offres" class="btn btn-primary" title="création et déblocage de fiche Google My Business">Nos Services</a>
             </div>
             <div class="hero-image">
-                <img src="fiche-google-my-business.webp" alt="Fiche Google My Business optimisée sur Google Maps" title="Fiche Google My Business" width="900" height="600" class="hero-img" loading="eager">
+                <img src="keywords-google-my-business-1.webp" alt="Page Google My Business et création de page Google entreprise" title="Page Google My Business" width="1200" height="628" class="hero-img" loading="eager">
             </div>
         </div>
     </section>
@@ -396,8 +396,8 @@
                     <div class="step-icon">
                         <span>2</span>
                     </div>
-                    <h3>Échange rapide sur WhatsApp</h3>
-                    <p>Notre équipe prend contact avec vous pour récupérer les informations de votre entreprise ou analyser le motif de suspension de votre fiche.</p>
+                    <h3>On vous appelle dans l'heure</h3>
+                    <p>Dès votre commande, notre équipe vous appelle dans l'heure pour récupérer les informations de votre entreprise ou analyser le motif de suspension de votre fiche.</p>
                 </div>
                 <div class="step">
                     <div class="step-icon">
@@ -414,7 +414,7 @@
         <div class="container">
             <h2 class="section-title">Nos Services Google My Business</h2>
             <p class="section-subtitle">Un tarif clair et tout compris pour chaque service. Sans abonnement, sans surprise.</p>
-            <div class="pricing-cards" style="grid-template-columns: repeat(2, 1fr); max-width: 760px; margin: 0 auto;">
+            <div class="pricing-cards pricing-2">
                 <div class="pricing-card">
                     <div class="pricing-header">
                         <h3>Création de fiche</h3>
@@ -580,6 +580,14 @@
                         nav.classList.remove('active');
                         menuToggle.classList.remove('active');
                     });
+                });
+
+                document.addEventListener('click', function(e) {
+                    if (nav.classList.contains('active') && !nav.contains(e.target) && !menuToggle.contains(e.target)) {
+                        nav.classList.remove('active');
+                        menuToggle.classList.remove('active');
+                        document.querySelectorAll('.nav-item.dropdown').forEach(d => d.classList.remove('active'));
+                    }
                 });
             }
 

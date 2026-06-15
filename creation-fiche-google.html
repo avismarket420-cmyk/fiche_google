@@ -159,7 +159,7 @@
                 <a href="#offre" class="btn btn-primary" title="créer une fiche Google My Business">Créer ma fiche</a>
             </div>
             <div class="hero-image">
-                <img src="fiche-google-my-business.webp" alt="Création d'une fiche Google My Business optimisée sur Google Maps" title="Créer une page Google My Business" width="900" height="600" class="hero-img" loading="eager">
+                <img src="keywords-google-my-business-1.webp" alt="Création de fiche Google et création d'un compte Google My Business" title="Creation Fiche Google" width="1200" height="628" class="hero-img" loading="eager">
             </div>
         </div>
     </section>
@@ -228,8 +228,8 @@
                     <div class="step-icon">
                         <span>2</span>
                     </div>
-                    <h3>Échange sur WhatsApp</h3>
-                    <p>Notre équipe récupère les informations de votre entreprise pour créer une fiche pertinente et bien optimisée.</p>
+                    <h3>On vous appelle dans l'heure</h3>
+                    <p>Dès votre commande, notre équipe vous appelle dans l'heure pour récupérer les informations de votre entreprise et créer une fiche pertinente et bien optimisée.</p>
                 </div>
                 <div class="step">
                     <div class="step-icon">
@@ -246,7 +246,7 @@
         <div class="container">
             <h2 class="section-title">Création de Fiche Google My Business</h2>
             <p class="section-subtitle">Un tarif unique, tout compris. Sans abonnement, sans surprise.</p>
-            <div class="pricing-cards" style="grid-template-columns: 1fr; max-width: 420px; margin: 0 auto;">
+            <div class="pricing-cards pricing-1">
                 <div class="pricing-card featured">
                     <div class="pricing-badge">Mise en ligne 48h</div>
                     <div class="pricing-header">
@@ -265,7 +265,7 @@
                         <li><span class="check">✓</span> Mise en ligne sous 48h</li>
                         <li><span class="check">✓</span> Support 7j/7</li>
                     </ul>
-                    <a href="mailto:support@fiche-business.fr?subject=Création%20de%20fiche%20Google%20My%20Business" class="btn btn-primary" title="commander la création de fiche Google">Commander</a>
+                    <a href="https://buy.stripe.com/5kQeVffIW8Ir0WU0UXaZi09" class="btn btn-primary" title="commander la création de fiche Google" target="_blank" rel="noopener noreferrer">Commander</a>
                 </div>
             </div>
         </div>
@@ -381,6 +381,14 @@
                         nav.classList.remove('active');
                         menuToggle.classList.remove('active');
                     });
+                });
+
+                document.addEventListener('click', function(e) {
+                    if (nav.classList.contains('active') && !nav.contains(e.target) && !menuToggle.contains(e.target)) {
+                        nav.classList.remove('active');
+                        menuToggle.classList.remove('active');
+                        document.querySelectorAll('.nav-item.dropdown').forEach(d => d.classList.remove('active'));
+                    }
                 });
             }
 

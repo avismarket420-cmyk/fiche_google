@@ -26,6 +26,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -783,6 +784,21 @@ img {
     color: var(--white);
 }
 
+/* Layouts spécifiques : 2 services (accueil) ou 1 service (pages dédiées) */
+.pricing-cards.pricing-2 {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pricing-cards.pricing-1 {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* ===================== FAQ ===================== */
 
 .faq {
@@ -1060,13 +1076,14 @@ img {
 
     .nav {
         position: fixed;
-        top: 56px;
+        top: 77px;
         left: 0;
         right: 0;
+        z-index: 1001;
         background: var(--white);
         padding: 20px;
         box-shadow: var(--shadow);
-        transform: translateY(-100%);
+        transform: translateY(-150%);
         opacity: 0;
         visibility: hidden;
         transition: var(--transition);
@@ -1085,6 +1102,10 @@ img {
         text-align: center;
     }
 
+    .nav-link {
+        justify-content: center;
+    }
+
     .nav-item.dropdown {
         position: relative;
     }
@@ -1097,8 +1118,8 @@ img {
         border: none;
         background: var(--light);
         border-radius: var(--radius);
-        margin-top: 10px;
-        padding: 8px;
+        margin-top: 0;
+        padding: 0 8px;
         max-height: 0;
         overflow: hidden;
         opacity: 0;
@@ -1114,6 +1135,8 @@ img {
         max-height: 200px;
         opacity: 1;
         visibility: visible;
+        margin-top: 10px;
+        padding: 8px;
     }
 
     .nav-item.dropdown:hover .dropdown-menu {
@@ -1228,7 +1251,9 @@ img {
         padding: 60px 0;
     }
 
-    .pricing-cards {
+    .pricing-cards,
+    .pricing-cards.pricing-2,
+    .pricing-cards.pricing-1 {
         grid-template-columns: 1fr;
         max-width: 400px;
         margin: 0 auto;
