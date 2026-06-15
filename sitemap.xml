@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://fiche-business.fr/</loc>
+        <lastmod>2026-06-15</lastmod>
+        <image:image>
+            <image:loc>https://fiche-business.fr/fiche-google-my-business.webp</image:loc>
+            <image:caption>Creation de fiche Google My Business optimisee pour votre visibilite locale.</image:caption>
+            <image:title>Creation de fiche Google My Business</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://fiche-business.fr/avis-google-entreprise.webp</image:loc>
+            <image:caption>Deblocage de fiche Google My Business suspendue ou desactivee.</image:caption>
+            <image:title>Deblocage de fiche Google My Business</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://fiche-business.fr/acheter-avis-google.png</image:loc>
+            <image:caption>Service professionnel de creation et de deblocage de fiche Google.</image:caption>
+            <image:title>fiche-business.fr</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://fiche-business.fr/creation-fiche-google.html</loc>
+        <lastmod>2026-06-15</lastmod>
+        <image:image>
+            <image:loc>https://fiche-business.fr/fiche-google-my-business.webp</image:loc>
+            <image:caption>Creation de fiche Google My Business optimisee, mise en ligne sous 48h.</image:caption>
+            <image:title>Creation de fiche Google My Business</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://fiche-business.fr/fiche-google-suspendu.html</loc>
+        <lastmod>2026-06-15</lastmod>
+        <image:image>
+            <image:loc>https://fiche-business.fr/avis-google-entreprise.webp</image:loc>
+            <image:caption>Deblocage de fiche Google My Business suspendue, garanti ou rembourse.</image:caption>
+            <image:title>Deblocage de fiche Google My Business</image:title>
+        </image:image>
+    </url>
+</urlset>
